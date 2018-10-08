@@ -1,0 +1,24 @@
+{
+  "name": "webpack-runtime-single",
+  "version": "1.0.0",
+  "description": "test application",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "",
+    "clean": "rimraf lib",
+    "webpackmain": "webpack --config webpackmain.config.js 1>&2",
+    "webpacklib": "webpack --config webpacklib.config.js 1>&2",
+    "webpacknolib": "webpack --config webpacknolib.config.js 1>&2",
+    "start": "node ./lib/dist/main.bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {},
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
